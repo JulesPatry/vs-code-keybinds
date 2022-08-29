@@ -1,0 +1,161 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  //
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "cmd+q",
+    "command": "-workbench.action.quit"
+  },
+  // Window Management
+  {
+    "key": "alt+cmd+]",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "alt+cmd+[",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "shift+alt+[",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "shift+alt+]",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "alt+cmd+\\",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+
+  // Terminal
+  {
+    "key": "alt+q",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "alt+w",
+    "command": "workbench.action.terminal.kill"
+  },
+
+  // Cut / Copy / Undo / Redo
+  {
+    "key": "cmd+z",
+    "command": "undo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+z",
+    "command": "-redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+
+  // Sidebar
+  {
+    "key": "shift+alt+=",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "shift+alt+-",
+    "command": "fileutils.removeFile"
+  },
+
+  // File Navigation
+  {
+    "key": "alt+cmd+r",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  // Line Jumper
+  {
+    "key": "shift+alt+down",
+    "command": "lineJumper.selectDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-lineJumper.selectDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "lineJumper.selectUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-lineJumper.selectUp",
+    "when": "editorTextFocus"
+  },
+  // Cursor Movement
+  {
+    "key": "alt+a",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "cursorWordEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+d",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+alt+d",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+alt+d",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+s",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+alt+s",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+w",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+alt+w",
+    "command": "cursorUpSelect",
+    "when": "textInputFocus"
+  }
+]
